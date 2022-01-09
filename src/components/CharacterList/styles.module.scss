@@ -1,0 +1,37 @@
+.list {
+  display: grid;
+  list-style: none;
+  font-size: 15px;
+  padding-left: 0;
+
+  @media (min-width: 600px) {
+    grid-gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.itemName {
+  font-size: 18px;
+}
+
+.link {
+  display: block;
+  border: 1px solid var(--border-color, transparent);
+  display: grid;
+  place-content: center;
+  height: 100%;
+  background: none;
+  width: 100%;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    --border-color: blue;
+    outline: none;
+  }
+
+  img {
+    margin-inline: auto;
+    margin-bottom: 2rem;
+  }
+}
