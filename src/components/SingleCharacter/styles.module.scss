@@ -1,0 +1,20 @@
+.wrapper {
+  --padding: 5;
+
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: calc(100vw - calc(var(--padding) * 2vw));
+  height: calc(100vh - calc(var(--padding) * 2vh));
+  z-index: 1;
+  padding: 1em;
+  background: black;
+  color: white;
+  overflow: auto;
+}
+
+.list {
+  max-height: 300px;
+  overflow: auto;
+}
